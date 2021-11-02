@@ -1,6 +1,7 @@
 #pragma once
 
 #include "H:\Downloads\CSC8502 2021\nclgl\OGLRenderer.h"
+#include "Camera.h"
 
 class Renderer : public OGLRenderer
 {
@@ -27,9 +28,13 @@ class Renderer : public OGLRenderer
 		{
 			position = p;
 		}
+
+		virtual void UpdateScene(float dt);
+
 protected:
 	Mesh* triangle;
 	Shader* matrixShader;
+	Camera* camera=new Camera;
 	float scale;
 	float rotation;
 	Vector3 position;
