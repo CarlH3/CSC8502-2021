@@ -41,6 +41,7 @@ class InputDevice	{
 protected:
 	friend class Window;
 	InputDevice(void) { isAwake = true;};
+	//
 	~InputDevice(void){};
 
 protected:
