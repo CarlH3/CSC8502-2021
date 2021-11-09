@@ -56,7 +56,7 @@ void Renderer::ToggleRepeating()
 
 void Renderer::ToggleFiltering()
 {
-	repeating = !filtering;
+	filtering = !filtering;
 	glBindTexture(GL_TEXTURE_2D, texture);
 	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,filtering ? GL_LINEAR : GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER,filtering ? GL_LINEAR : GL_NEAREST);

@@ -46,6 +46,7 @@ public:
 		int start;
 		int count;
 	};
+	static Mesh* GenerateQuad();
 
 	Mesh(void);
 	~Mesh(void);
