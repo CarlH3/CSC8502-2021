@@ -130,13 +130,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CubeRobot.cpp" />
-    <ClCompile Include="SceneNode.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Tutorial6.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CubeRobot.h" />
-    <ClInclude Include="SceneNode.h" />
+    <ClInclude Include="Renderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SceneFragment.glsl" />
+    <None Include="SceneVertex.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
