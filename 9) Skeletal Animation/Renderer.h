@@ -1,14 +1,13 @@
 #pragma once
 
-#include"../nclgl/OGLRenderer.h"
+#include "../nclgl/OGLRenderer.h"
 
 class Camera;
 class Mesh;
 class MeshAnimation;
 class MeshMaterial;
 
-class Renderer :public OGLRenderer
-{
+class Renderer :public OGLRenderer {
 public:
 	Renderer(Window& parent);
 	~Renderer(void);
@@ -18,8 +17,8 @@ public:
 
 protected:
 	Camera* camera;
-	Shader* shader;
 	Mesh* mesh;
+	Shader* shader;
 	MeshAnimation* anim;
 	MeshMaterial* material;
 	vector<GLuint> matTextures;

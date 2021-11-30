@@ -1,9 +1,8 @@
 #pragma once
 
-#include "..//nclgl/OGLRenderer.h"
+#include "../nclgl/OGLRenderer.h"
 
-class Renderer : public OGLRenderer 
-{
+class Renderer :public OGLRenderer {
 public:
 	Renderer(Window& parent);
 	~Renderer(void);
@@ -15,7 +14,6 @@ public:
 	void ToggleAlphaBlend();
 	void ToggleBlendMode();
 	void MoveObject(float by);
-
 protected:
 	GLuint textures[2];
 	Mesh* meshes[2];

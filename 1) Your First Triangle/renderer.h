@@ -1,8 +1,7 @@
 #pragma once
-#include "H:\Downloads\CSC8502 2021\nclgl\OGLRenderer.h"
+#include "../nclgl/OGLRenderer.h"
 
-class Renderer : public OGLRenderer
-{
+class Renderer :public OGLRenderer {
 public:
 	Renderer(Window& parent);
 	virtual ~Renderer(void);

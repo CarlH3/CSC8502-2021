@@ -41,12 +41,10 @@ enum MeshBuffer {
 
 class Mesh	{
 public:	
-	
 	struct SubMesh {
 		int start;
 		int count;
 	};
-	static Mesh* GenerateQuad();
 
 	Mesh(void);
 	~Mesh(void);
@@ -54,8 +52,8 @@ public:
 	void Draw();
 	void DrawSubMesh(int i);
 
-	static Mesh* GenerateTriangle();
 	static Mesh* LoadFromMeshFile(const std::string& name);
+	static Mesh* GenerateQuad();
 
 	unsigned int GetTriCount() const {
 		int primCount = indices ? numIndices : numVertices;
@@ -85,6 +83,11 @@ public:
 
 	bool GetSubMesh(int i, const SubMesh* s) const;
 	bool GetSubMesh(const std::string& name, const SubMesh* s) const;
+
+	static Mesh* GenerateTriangle();
+
+	void GenerateNormals();
+	bool GetVertexIndicesForTri(unsigned int i, unsigned int& a, unsigned int& b, unsigned int& c) const;
 
 protected:
 	void	BufferData();
@@ -116,5 +119,8 @@ protected:
 	std::vector<int>			jointParents;
 	std::vector< SubMesh>		meshLayers;
 	std::vector<std::string>	layerNames;
+
+	void			GenerateTangents();
+	Vector4			GenerateTangent(int a, int b, int c);
 };
 

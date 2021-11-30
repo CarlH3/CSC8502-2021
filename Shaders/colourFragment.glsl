@@ -1,13 +1,10 @@
 #version 330 core
 
-in Vertex
-{	
+in Vertex{
 	vec4 colour;
 }IN;
 
 out vec4 fragColour;
-
-void main(void)
-{
+void main(void) {
 	fragColour = IN.colour;
 }

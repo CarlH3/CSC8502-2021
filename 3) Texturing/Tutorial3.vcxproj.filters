@@ -1,22 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="tutorial3.cpp" />
+    <ClCompile Include="tutorial3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Renderer.cpp">
-      <Filter>Source File</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header File">
-      <UniqueIdentifier>{12894917-078d-4ae2-9b94-684d63c5b1ea}</UniqueIdentifier>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{afafe416-8f9f-4ba9-a60e-b11ca95e4d71}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source File">
-      <UniqueIdentifier>{b3c35229-7950-4231-8356-b24df3c2fb2f}</UniqueIdentifier>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7393039a-7f12-48a3-b6fa-f3ae81679b51}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderer.h">
-      <Filter>Header File</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

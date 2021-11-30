@@ -7,23 +7,17 @@
     <ClCompile Include="tutorial2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{c1428e62-2665-44ea-9f46-02666f771be2}</UniqueIdentifier>
+      <UniqueIdentifier>{6e3d4f7c-072c-47eb-9bb8-8fc90492714f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{46c55fdf-3e05-4af6-af54-75663f7bacfb}</UniqueIdentifier>
+      <UniqueIdentifier>{238606ea-8c73-4e60-aca3-b78661ad0928}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,6 @@
 #include "CubeRobot.h"
 
 CubeRobot::CubeRobot(Mesh* cube) {
-
 	SceneNode* body = new SceneNode(cube, Vector4(1, 0, 0, 1));
 	body->SetModelScale(Vector3(10, 15, 5));
 	body->SetTransform(Matrix4::Translation(Vector3(0, 35, 0)));
@@ -22,28 +21,24 @@ CubeRobot::CubeRobot(Mesh* cube) {
 	rightArm->SetTransform(Matrix4::Translation(Vector3(12, 30, -1)));
 	body->AddChild(rightArm);
 
-	SceneNode* leftleg = new SceneNode(cube, Vector4(0, 0, 1, 1));
-	leftleg->SetModelScale(Vector3(3, -17.5, 3));
-	leftleg->SetTransform(Matrix4::Translation(Vector3(-8, 0, 0)));
-	body->AddChild(leftleg);
+	SceneNode* leftLeg = new SceneNode(cube, Vector4(0, 0, 1, 1));
+	leftLeg->SetModelScale(Vector3(3, -17.5, 3));
+	leftLeg->SetTransform(Matrix4::Translation(Vector3(-8, 0, 0)));
+	body->AddChild(leftLeg);
 
-	SceneNode* rightleg = new SceneNode(cube, Vector4(0, 0, 1, 1));
-	rightleg->SetModelScale(Vector3(3, -17.5, 3));
-	rightleg->SetTransform(Matrix4::Translation(Vector3(8, 0, 0)));
-	body->AddChild(rightleg);
+	SceneNode* rightLeg = new SceneNode(cube, Vector4(0, 0, 1, 1));
+	rightLeg->SetModelScale(Vector3(3, -17.5, 3));
+	rightLeg->SetTransform(Matrix4::Translation(Vector3(8, 0, 0)));
+	body->AddChild(rightLeg);
 
-	//tutorial 7 begin
 	body->SetBoundingRadius(15.0f);
 	head->SetBoundingRadius(5.0f);
 
 	leftArm->SetBoundingRadius(18.0f);
 	rightArm->SetBoundingRadius(18.0f);
 
-	leftleg->SetBoundingRadius(18.0f);
-	rightleg->SetBoundingRadius(18.0f);
-	//tutorial 7 end
-
-
+	leftLeg->SetBoundingRadius(18.0f);
+	rightLeg->SetBoundingRadius(18.0f);
 }
 
 void CubeRobot::Update(float dt) {

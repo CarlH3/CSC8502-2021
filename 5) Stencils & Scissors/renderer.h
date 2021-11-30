@@ -2,10 +2,9 @@
 
 #include "../nclgl/OGLRenderer.h"
 
-class Renderer :public OGLRenderer
-{
+class Renderer :public OGLRenderer {
 public:
-	Renderer(Window &parent);
+	Renderer(Window& parent);
 	~Renderer(void);
 
 	void RenderScene() override;

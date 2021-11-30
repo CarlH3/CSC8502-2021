@@ -7,8 +7,4 @@
   <ItemGroup>
     <ClInclude Include="Renderer.h" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="SceneFragment.glsl" />
-    <None Include="SceneVertex.glsl" />
-  </ItemGroup>
 </Project>

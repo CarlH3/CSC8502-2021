@@ -136,10 +136,6 @@
   <ItemGroup>
     <ClInclude Include="Renderer.h" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="SceneFragment.glsl" />
-    <None Include="SceneVertex.glsl" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

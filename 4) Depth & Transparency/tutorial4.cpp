@@ -1,5 +1,5 @@
 #include "../nclGL/window.h"
-#include "renderer.h"
+#include "Renderer.h"
 
 int main()	{
 	Window w("Depth and Transparency!", 1280, 720, false);//This is all boring win32 window creation stuff!
